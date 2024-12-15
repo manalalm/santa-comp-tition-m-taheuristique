@@ -6,7 +6,7 @@ Ce problème peut être classé comme un problème d'optimisation combinatoire, 
 (Problèmes combinatoires : Impliquent des variables discrètes ou entières, où les solutions possibles sont un ensemble fini ou dénombrable.)
 ## Fonction objectif (perplexité) :
 •	L'objectif est de minimiser la perplexité, qui mesure la « confusion » du modèle quant à la séquence de mots générée. Une faible perplexité indique que la séquence est plus cohérente avec la langue naturelle, tandis qu'une grande perplexité suggère que la séquence est difficile à comprendre pour le modèle.
-•	La perplexité est calculée par rapport au modèle de langage Gemma 2 9B, et l'objectif est de trouver la permutation des mots qui minimise cette valeur.
+\\•	La perplexité est calculée par rapport au modèle de langage Gemma 2 9B, et l'objectif est de trouver la permutation des mots qui minimise cette valeur.
 ## Les contraintes :
 •	La contrainte principale est que la séquence soumise doit être une permutation valide des mots de la séquence de base, c'est-à-dire que les mêmes mots doivent être présents, mais dans un ordre différent.
 •	Unicité des mots : Aucun mot ne peut être répété ou omis dans la solution ; ont doit simplement réarranger les mots existants.
@@ -33,7 +33,7 @@ Exploration : Chercher de nouvelles solutions
 o	Mutation : C’est un opérateur utilisé pour introduire de la diversité dans la population d'individus (solutions). La mutation modifie aléatoirement un individu de la population. Par exemple, dans le cadre du réarrangement de mots dans une séquence, cela pourrait consister à échanger aléatoirement deux mots de la séquence. Cela permet à l'algorithme d'explorer de nouvelles régions de l'espace des solutions. Même si l'algorithme a trouvé de bonnes solutions, la mutation permet de tester des solutions radicalement différentes.
 o	Croisement (Crossover) : Le croisement consiste à combiner deux solutions (individus) pour créer de nouvelles solutions. Par exemple, dans le cas de la permutation de mots, le croisement pourrait impliquer de mélanger deux séquences de mots pour créer une nouvelle séquence. Cette méthode permet également d'explorer de nouvelles combinaisons de solutions en combinant les caractéristiques de deux parents.
 Exploitation : Affiner les bonnes solutions
-•	Exploitation fait référence à la capacité de l'algorithme à concentrer ses efforts sur les solutions prometteuses. Cela implique d’améliorer et d'affiner les solutions qui semblent proches de l'optimum global.
+\\ •	Exploitation fait référence à la capacité de l'algorithme à concentrer ses efforts sur les solutions prometteuses. Cela implique d’améliorer et d'affiner les solutions qui semblent proches de l'optimum global.
 o	Sélection : Dans un algorithme génétique, les solutions sont sélectionnées en fonction de leur qualité (par exemple, la perplexité dans ce cas). Les solutions les plus proches de l'optimum (les meilleures) ont plus de chances d'être choisies pour générer les prochaines solutions. Cela permet d'exploiter les meilleures solutions trouvées jusqu'à présent pour en générer de nouvelles versions potentiellement améliorées.
 o	Exploitation et croisement : Lors du croisement, on favorise souvent des solutions qui sont déjà proches de l'optimum. Par exemple, on peut mélanger deux solutions qui ont des qualités similaires, dans l'espoir de combiner leurs forces et d'améliorer encore la solution. Cela est une forme d'exploitation, car l'algorithme se concentre sur les solutions qui sont déjà bonnes.
 
