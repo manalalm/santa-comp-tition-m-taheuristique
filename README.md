@@ -22,12 +22,12 @@ Pour explorer l'espace de solutions, vous pouvez modifier la solution actuelle e
 •	Swap (échange de deux mots) : Vous pouvez échanger deux mots dans la séquence. Cela modifie l'ordre sans violer la contrainte de permutation.
 •	Insertion : Vous pouvez déplacer un mot d'une position à une autre dans la séquence.
 
-# 7. Métahuristique à appliquer
+#  Métahuristique à appliquer
 ## Algorithmes génétiques (Genetic Algorithms) :
 Les algorithmes génétiques sont adaptés aux problèmes de permutation. Ils utilisent des opérateurs comme la mutation (échanger des mots), le croisement (combiner des permutations) et la sélection (choisir les meilleures permutations) pour explorer l'espace des solutions de manière efficace.
 • Exploration : L'exploration est gérée par des opérateurs de croisement (crossover) et de mutation qui créent de nouvelles solutions en combinant des parents de manière aléatoire.
 • Exploitation : L'exploitation est effectuée via la sélection où les meilleures solutions (les plus proches du minimum de perplexité) sont plus susceptibles d'être sélectionnées pour la reproduction, et donc pour générer des solutions futures. Par ailleurs, la mutation dans les GAs introduit de la diversité, ce qui permet également un certain niveau d'exploration même à des stades avancés.
-Exploration et Exploitation dans les Algorithmes Génétiques (GA)
+## Exploration et Exploitation dans les Algorithmes Génétiques (GA)
 Exploration : Chercher de nouvelles solutions
 •	Exploration dans le contexte des algorithmes génétiques fait référence à la capacité de l'algorithme à explorer un espace de solutions large et diversifié, en générant de nouvelles solutions, souvent loin des solutions précédentes. Cela permet à l'algorithme d'éviter de se retrouver piégé dans des minima locaux (c'est-à-dire des solutions qui sont bonnes mais qui ne sont pas optimales globalement).
 o	Mutation : C’est un opérateur utilisé pour introduire de la diversité dans la population d'individus (solutions). La mutation modifie aléatoirement un individu de la population. Par exemple, dans le cadre du réarrangement de mots dans une séquence, cela pourrait consister à échanger aléatoirement deux mots de la séquence. Cela permet à l'algorithme d'explorer de nouvelles régions de l'espace des solutions. Même si l'algorithme a trouvé de bonnes solutions, la mutation permet de tester des solutions radicalement différentes.
