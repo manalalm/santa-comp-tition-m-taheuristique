@@ -1,4 +1,4 @@
-# santa-comp-tition-m-taheuristique:
+# santa-competition-metaheuristique:
 ## Objectif :
 L'objectif de cette compétition est de réorganiser des mots mélangés dans des passages d'histoires de Noël classiques afin de minimiser la perplexité du texte. La perplexité est une mesure qui indique à quel point un modèle trouve difficilement à prédire le texte suivant dans une séquence de mots. Moins la perplexité est élevée, plus le texte est fluide et compréhensible.
 ## Type de problème :
