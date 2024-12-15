@@ -11,16 +11,16 @@ Ce problème peut être classé comme un problème d'optimisation combinatoire, 
 •	La contrainte principale est que la séquence soumise doit être une permutation valide des mots de la séquence de base, c'est-à-dire que les mêmes mots doivent être présents, mais dans un ordre différent.
 •	Unicité des mots : Aucun mot ne peut être répété ou omis dans la solution ; ont doit simplement réarranger les mots existants.
 ## La séquence :
-La séquence fait référence à un ensemble ordonné de mots dans un passage d'un texte. Chaque passage (ou texte) donné est constitué d'une série de mots qui ont été mélangés, et votre tâche consiste à réorganiser ces mots dans un ordre logique et cohérent pour que le texte retrouve son sens initial.
+La séquence fait référence à un ensemble ordonné de mots dans un passage d'un texte. Chaque passage (ou texte) donné est constitué d'une série de mots qui ont été mélangés, et notre tâche consiste à réorganiser ces mots dans un ordre logique et cohérent pour que le texte retrouve son sens initial.
 ## La solution :
 La solution à ce problème est donc une permutation des mots de la séquence, qui représente l'ordre des mots qui donne la perplexité la plus faible. Cela signifie qu'il faut explorer différentes permutations et choisir celle qui maximise la fluidité du texte.
 ## Espace de solutions :
 L'espace de solutions est l'ensemble de toutes les permutations possibles des mots dans la séquence donnée. Si la séquence contient N mots, l'espace de solutions contient N! (factorielle de N) permutations possibles.
-## Complexité : O(N !)
+### Complexité : O(N !)
 ## Comment changer les solutions (se déplacer)
-Pour explorer l'espace de solutions, vous pouvez modifier la solution actuelle en effectuant des mouvements. Ces mouvements sont les suivantes :
-•	Swap (échange de deux mots) : Vous pouvez échanger deux mots dans la séquence. Cela modifie l'ordre sans violer la contrainte de permutation.
-•	Insertion : Vous pouvez déplacer un mot d'une position à une autre dans la séquence.
+Pour explorer l'espace de solutions, nous pouvons modifier la solution actuelle en effectuant des mouvements. Ces mouvements sont les suivantes :
+•	Swap (échange de deux mots) : Nous pouvons échanger deux mots dans la séquence. Cela modifie l'ordre sans violer la contrainte de permutation.
+•	Insertion : Nous pouvons déplacer un mot d'une position à une autre dans la séquence.
 
 #  Métahuristique à appliquer
 ## Algorithmes génétiques (Genetic Algorithms) :
