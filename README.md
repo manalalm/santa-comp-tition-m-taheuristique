@@ -46,4 +46,3 @@ o	Ces solutions sont exploitées (on se concentre sur les meilleures solutions e
 o	Croisement (Exploration) : On prend deux de ces bonnes solutions et on les combine pour produire de nouvelles solutions (crossover). Cela permet d'explorer de nouvelles solutions.
 o	Mutation (Exploration) : Après le croisement, on peut appliquer une mutation à une solution pour encore introduire de la diversité et explorer des solutions radicalement différentes.
 4.	Nouveaux individus : Les nouvelles solutions obtenues par croisement et mutation sont ajoutées à la population. L'algorithme va à nouveau sélectionner les meilleures solutions (exploitation), mais cette fois-ci parmi une population mise à jour qui a plus de diversité grâce à l'exploration.
-Les paramétres a optimiser :
